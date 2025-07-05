@@ -1,0 +1,221 @@
+/* Genel ayarlar */
+body {
+  margin: 0; /* Sayfa kenar boşluğu yok */
+  padding: 0; /* İç boşluk sıfır */
+  font-family: 'Arial', sans-serif; /* Yazı tipi */
+  background-color: #fff7ea; /* Arka plan rengi */
+}
+
+a {
+  text-decoration: none; /* Alt çizgi yok */
+  color: inherit; /* Renk devral */
+}
+
+html {
+  scroll-behavior: smooth; /* Yumuşak kaydırma */
+}
+
+/* Navbar üst menü */
+.navbar {
+  display: flex; /* Yatay hizalama */
+  justify-content: space-between; /* Logo ve linkler arası */
+  align-items: center; /* Dikey ortalama */
+  padding: 20px 40px; /* İç boşluk */
+  background-color: #fff0d6; /* Menü arka planı */
+  position: sticky; /* Yukarı sabit */
+  top: 0;
+  z-index: 100; /* Üste çıksın */
+}
+
+.logo {
+  font-size: 28px; /* Logo boyutu */
+  font-weight: bold; /* Kalın yazı */
+  color: #ff7a00; /* Logo rengi */
+}
+
+.nav-links {
+  list-style: none; /* Madde işareti yok */
+  display: flex; /* Yatay diz */
+  gap: 20px; /* Boşluk */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #333; /* Yazı rengi */
+  font-weight: bold; /* Kalın yazı */
+  transition: color 0.3s; /* Renk geçişi */
+}
+
+.nav-links a:hover {
+  color: #ff7a00; /* Üzerine gelince renk */
+}
+
+/* Giriş bölümü */
+.hero {
+  display: flex; /* Yan yana */
+  justify-content: space-between; /* Dağılım */
+  align-items: center; /* Ortala */
+  padding: 60px 40px; /* İç boşluk */
+  background-color: #fffaf0; /* Arka renk */
+  flex-wrap: wrap; /* Küçük ekranda alt alta */
+}
+
+.hero-text {
+  flex: 1; /* Genişlik al */
+  max-width: 600px; /* Maksimum genişlik */
+  font-size: 30px; /* Yazı boyutu */
+  line-height: 2; /* Satır arası */
+  padding-right: 40px; /* Sağ boşluk */
+  color: #333; /* Yazı rengi */
+}
+
+.hero-img img {
+  width: 100%; /* Genişlik tam */
+  max-width: 400px; /* Maksimum genişlik */
+  height: auto; /* Oranlı yükseklik */
+  border-radius: 20px; /* Kenar oval */
+  object-fit: cover; /* Görsel sığsın */
+}
+
+/* Projeler alanı */
+.projects {
+  padding: 80px 40px; /* İç boşluk */
+  background-color: #fff5e1; /* Arka plan */
+  text-align: center; /* Ortala */
+}
+
+.projects h2 {
+  font-size: 32px; /* Başlık boyutu */
+  color: #ff7a00; /* Başlık rengi */
+  margin-bottom: 40px; /* Alt boşluk */
+}
+
+.project-cards {
+  display: flex; /* Yatay diz */
+  justify-content: center; /* Ortala */
+  gap: 40px; /* Kart arası boşluk */
+  flex-wrap: wrap; /* Küçük ekranda alt alta */
+}
+
+.project-card {
+  background-color: white; /* Kart arka plan */
+  border-radius: 16px; /* Oval kenar */
+  padding: 20px;
+  width: 250px; /* Kart genişliği */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge */
+  transition: transform 0.2s; /* Hover efekti */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Hover zıplat */
+}
+
+/* Hakkımda bölümü */
+.about {
+  padding: 80px 40px; /* İç boşluk */
+  background-color: #fff5e1; /* Arka renk */
+  text-align: center; /* Ortala */
+}
+
+.about h2 {
+  font-size: 32px; /* Başlık */
+  color: #ff7a00; /* Turuncu */
+  margin-bottom: 40px; /* Alt boşluk */
+}
+
+.about p {
+  font-size: 18px; /* Yazı boyutu */
+  line-height: 2; /* Satır arası */
+  color: #333; /* Yazı rengi */
+}
+
+.about-card {
+  background-color: white; /* Kart rengi */
+  border-radius: 16px; /* Oval köşe */
+  padding: 20px; /* İç boşluk */
+  max-width: 800px; /* Genişlik sınırı */
+  margin: auto; /* Ortala */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge */
+  transition: transform 0.2s; /* Hover efekti */
+}
+
+/* Sosyal medya bölümü */
+.smcards {
+  padding: 80px 40px; /* İç boşluk */
+  background-color: #fff5e1; /* Arka renk */
+  text-align: center; /* Ortala */
+}
+
+.smcards h2 {
+  font-size: 32px; /* Başlık boyutu */
+  color: #ff7a00; /* Başlık rengi */
+  margin-bottom: 40px; /* Alt boşluk */
+}
+
+.sm-cards {
+  display: flex; /* Yatay diz */
+  justify-content: center; /* Ortala */
+  gap: 40px; /* Boşluk */
+  flex-wrap: wrap; /* Küçük ekranda alt alta */
+}
+
+.sm-card {
+  background-color: white; /* Kart rengi */
+  border-radius: 16px; /* Oval köşe */
+  padding: 20px; /* İç boşluk */
+  width: 250px; /* Genişlik */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge */
+  transition: transform 0.2s; /* Hover efekti */
+  text-align: center; /* Ortala */
+}
+
+.sm-card:hover {
+  transform: translateY(-5px); /* Hover zıplat */
+}
+
+.sm-card img {
+  max-width: 100px; /* Görsel genişliği */
+  height: auto; /* Oranlı yükseklik */
+  margin-top: 10px; /* Üst boşluk */
+}
+
+.site-footer {
+  background-color: #fff0d6;        /* Açık sarı ton */
+  color: #555;                      /* Gri metin rengi */
+  text-align: center;              /* Ortala */
+  padding: 20px 0;                 /* Dikey boşluk */
+  font-size: 14px;                 /* Küçük yazı */
+  border-top: 1px solid #ddd;      /* Üst çizgi */
+}
+.site-footer p {
+  margin: 5px 0;
+}
+
+/* Responsive - mobil uyum */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .project-cards, .sm-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card, .sm-card {
+    width: 100%;
+  }
+}
